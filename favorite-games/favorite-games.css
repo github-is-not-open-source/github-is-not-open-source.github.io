@@ -1,0 +1,55 @@
+body {
+    overflow-x:hidden;
+    
+
+}
+
+
+.cover {
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    z-index: -1000;
+}
+
+#celeste {
+    background-image: url(https://darkzero.co.uk/wp-content/uploads/2018/04/Dash.png)
+}
+
+#white {
+    background-color: white;
+}
+h1 {
+    text-align: center;
+}
+
+.game-text {
+    position:relative;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 200vw;
+    z-index: 2;
+    font-size: xx-large;
+}
+
+.white-text {
+    color: white;
+}
+
+.title-text {
+    font-size: xx-large;
+    width: 100vw;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    margin-bottom: 100vw;
+}
+
+body {
+    margin:0px
+}
