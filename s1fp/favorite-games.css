@@ -37,6 +37,12 @@ html {
     margin-bottom: 100vh;
 }
 
+#navbarlink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 body {
     margin: 0px
 }
@@ -66,10 +72,6 @@ h1 {
     justify-content: space-around;
     width: 80vw;
     font-size: medium;
-}
-
-#nav-bar-element {
-    cursor: pointer;
 }
 
 /* Specific CSS */

@@ -20,6 +20,12 @@ h1 {
     font-size: large;
 }
 
+#navbarlink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 #navigation-bar {
     margin-left:10vw;
     margin-right: 10vw;
@@ -29,10 +35,6 @@ h1 {
     justify-content: space-around;
     width: 80vw;
     font-size: medium;
-}
-
-#nav-bar-element {
-    cursor: pointer;
 }
 
 #big-greyscale-wrapper {
@@ -90,9 +92,6 @@ h1 {
     width: 100px;
     }
     
-#iconText {
-    /* Blank CSS class to size and style as you see fit */
-    }
 #webring {
     /* makes the cursor a pointer */
     position:relative;
