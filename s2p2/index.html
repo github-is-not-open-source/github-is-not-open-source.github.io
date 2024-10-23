@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>s2p2</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <input type="checkbox" id="start-screen">
+        <div id="start-screen-wrapper">
+            <img src="images/Among_Us_logo.webp" id="amonguslogo" alt="Among Us logo">
+            <label for="start-screen" id="start-button-border">
+                <div id="start-button-inside">
+                    Start
+                </div>
+            </label>
+        </div>
+        <input type="checkbox" id="ejectRed" class="ejectCrewmate">
+        <input type="checkbox" id="ejectBlue" class="ejectCrewmate">
+        <input type="checkbox" id="ejectGreen" class="ejectCrewmate">
+        <input type="checkbox" id="ejectYellow" class="ejectCrewmate">
+        <div id="among-us-player-wrapper" class="hide-start">
+            Click on a crewmate to eject them!
+            <div id="among-us-player-flex">
+                <label for="ejectRed" id="crewmate-div"><img src="images/RedAmongUs.webp" alt="Red Among Us crewmate"></label>
+                <label for="ejectBlue" id="crewmate-div"><img src="images/BlueAmongUs.webp" alt="Blue Among Us crewmate"></label>
+                <label for="ejectGreen" id="crewmate-div"><img src="images/GreenAmongUs.webp" alt="Green Among Us crewmate"></label>
+                <label for="ejectYellow" id="crewmate-div"><img src="images/YellowAmongUs.webp" alt="Yellow Among Us crewmate"></label>
+            </div>
+        </div>
+        <div id="red-eject" class="ejectText">Red was the impostor.</div>
+        <div id="blue-eject" class="ejectText">Blue was not the impostor.</div>
+        <div id="green-eject" class="ejectText">Green was not the impostor</div>
+        <div id="yellow-eject" class="ejectText">Yellow was not the impostor</div>
+    </body>
+</html>
