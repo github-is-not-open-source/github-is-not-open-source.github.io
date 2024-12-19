@@ -1,0 +1,102 @@
+body {
+    height: 600px;
+    width:800px;
+    overflow: hidden;
+}
+
+#table {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:800px;
+    height:600px;
+    background-color: #adadad;
+}
+  
+.card-grow {
+    position:absolute;
+    width: 100px;
+    height: 150px;
+    z-index: 0;
+    transition:
+      width 1s,
+      height 1s,
+      z-index 0.1s 0.3s,
+      transform 1s;
+}
+  
+#card {
+    position:absolute;
+    top: 200px;
+    left: 200px;
+    transform: rotate(-15deg);
+}
+  
+.card-grow:hover {
+    font-size: 60px;
+    width: 200px;
+    height: 300px;
+    z-index: 2;
+    transform: rotate(0deg) !important;
+}
+  
+#magazine-border {
+    position:absolute;
+    top: 200px;
+    left: 400px;
+    width: 325px;
+    height: 450px;
+    padding: 25px 25px 25px 25px;
+    transform: rotate(30deg);
+    background: red;
+}
+
+#magazine-cover {
+    position:absolute;
+    width: 325px;
+    height: 450px;
+    background: #f7f29e;
+    font-size: 100px;
+    text-align:center;
+    color:#c9c9c9;
+}
+  
+.card-back {
+    width: 100px;
+    height: 150px;
+    transform: rotate(-60deg);
+    --width-of-line-white: 1.5%;
+    --width-of-line-red: 3%;
+    --num-notches: 5;
+    --size-dash: calc(var(--width-of-line-red) / 13);
+    background:
+      repeating-linear-gradient(to right bottom, transparent 0% var(--width-of-line-white), red var(--width-of-line-white) calc(var(--width-of-line-white) + var(--size-dash)), transparent calc(var(--size-dash) + var(--width-of-line-white)) calc(var(--width-of-line-white) + 4 * var(--size-dash)), red calc(var(--width-of-line-white) + 4 * var(--size-dash)) calc(var(--width-of-line-white) + 5 * var(--size-dash)), transparent calc(var(--width-of-line-white) + 5 * var(--size-dash)) calc(var(--width-of-line-white) + 8 * var(--size-dash)), red calc(var(--width-of-line-white) + 8 * var(--size-dash)) calc(var(--width-of-line-white) + 9 * var(--size-dash)), transparent calc(var(--width-of-line-white) + 9 * var(--size-dash)) calc(var(--width-of-line-white) + 12 * var(--size-dash)), red calc(var(--width-of-line-white) + 12 * var(--size-dash)) calc(var(--width-of-line-white) + 13 * var(--size-dash))),
+      repeating-linear-gradient(to right top, transparent 0% var(--width-of-line-white), red var(--width-of-line-white) calc(var(--width-of-line-white) + var(--size-dash)), transparent calc(var(--size-dash) + var(--width-of-line-white)) calc(var(--width-of-line-white) + 4 * var(--size-dash)), red calc(var(--width-of-line-white) + 4 * var(--size-dash)) calc(var(--width-of-line-white) + 5 * var(--size-dash)), transparent calc(var(--width-of-line-white) + 5 * var(--size-dash)) calc(var(--width-of-line-white) + 8 * var(--size-dash)), red calc(var(--width-of-line-white) + 8 * var(--size-dash)) calc(var(--width-of-line-white) + 9 * var(--size-dash)), transparent calc(var(--width-of-line-white) + 9 * var(--size-dash)) calc(var(--width-of-line-white) + 12 * var(--size-dash)), red calc(var(--width-of-line-white) + 12 * var(--size-dash)) calc(var(--width-of-line-white) + 13 * var(--size-dash))),
+      repeating-linear-gradient(to right bottom, white 0% var(--width-of-line-white), transparent var(--width-of-line-white) calc(var(--width-of-line-white) + var(--width-of-line-red))),
+      repeating-linear-gradient(to right top, white 0% var(--width-of-line-white), transparent var(--width-of-line-white) calc(var(--width-of-line-white) + var(--width-of-line-red))),
+    red;
+}
+  
+#card-deck {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    transform: rotate(-60deg);
+}
+  
+#back {
+    position:absolute;
+    width:800px;
+    height:600px;
+    margin-top:600px;
+    background-color: #ffffff;
+}
+  
+#back2 {
+    position:absolute;
+    margin-left:800px;
+    width:800px;
+    height:600px;
+    background-color: #ffffff;
+}
+  
