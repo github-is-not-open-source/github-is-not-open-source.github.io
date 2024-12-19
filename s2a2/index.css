@@ -1,0 +1,248 @@
+@import url("fonts/amatic-sc/amatic-sc.css");
+
+body {
+    margin: 0px;
+    background-image: url(images/amongusspace.jpg);
+    font-family: "Amatic SC";
+    user-select: none;
+}
+
+:root {
+    --border-size: 5px;
+    --transition-time: 1s;
+}
+
+#start-screen {
+    display: none;
+}
+
+/* Scale and position the Among Us logo correctly */
+
+#start-screen-wrapper {
+    position:fixed;
+    user-select: none;
+    visibility: visible;
+    transition: 
+        visibility var(--transition-time),
+        opacity var(--transition-time);
+    opacity: 1;
+}
+
+#start-screen:checked ~ #start-screen-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#start-button-border {
+    background-color: white;
+    cursor: pointer;
+}
+
+#start-button-inside {
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+}
+
+#start-buttonText {
+    /* TODO: FINISH */
+}
+
+@media screen and (aspect-ratio <= 1000/414) and (aspect-ratio > 1000/725) {
+    #amonguslogo {
+        position: absolute;
+        --height: calc(100vh / 2.8);
+        --width: calc(1000 * var(--height) / 259);
+        height: var(--height);
+        left: calc((100vw - var(--width))/2);
+        top: calc((100vh - 100vh/1.75)/2);
+    }
+
+    #start-button-border {
+        position: absolute;
+        --height-of-logo: calc(100vh / 2.8);
+        --width-of-logo: calc(1000 * var(--height-of-logo) / 259);
+        left: calc((100vw - var(--width-of-logo) * 0.3)/2);
+        top: calc((100vh - 100vh/1.75)/2 + 1.1*var(--height-of-logo));
+        width: calc(var(--width-of-logo) * 0.3);
+        height: calc(0.5 * var(--height-of-logo));
+        border-radius: var(--border-size);
+    }
+
+    #start-button-inside {
+        position: absolute;
+        --height-of-logo: calc(100vh / 2.8);
+        --width-of-logo: calc(1000 * var(--height-of-logo) / 259);
+        --width-of-button: calc(var(--width-of-logo) * 0.3);
+        --height-of-button: calc(0.5 * var(--height-of-logo));
+        --height-of-inner: calc(var(--height-of-button) - 2 * var(--border-size));
+        height: var(--height-of-inner);
+        --width-of-inner: calc(var(--width-of-button) - 2 * var(--border-size));
+        width: var(--width-of-inner);
+        top: var(--border-size);
+        left: var(--border-size);
+        border-radius: var(--border-size);
+        line-height: var(--height-of-inner);
+        font-size: var(--height-of-inner);
+    }
+}
+
+
+@media screen and (aspect-ratio <= 1000/725) {
+    #amonguslogo {
+        position:absolute;
+        top: calc((100vh - (100vw * 259 * 1.6 / 1000))/2);
+        width: 100vw;
+    }
+
+    #start-button-border {
+        position:absolute;
+        --height-of-logo: calc(100vw * 259 / 1000);
+        top: calc((100vh - (100vw * 259 * 1.6 / 1000))/2 + 1.1 * var(--height-of-logo));
+        left: 35vw;
+        height: calc(0.5 * var(--height-of-logo));
+        width: 30vw;
+        border-radius: var(--border-size);
+    }
+
+    #start-button-inside {
+        position:absolute;
+        --height-of-logo: calc(100vw * 259 / 1000);
+        top: var(--border-size);
+        left: var(--border-size);
+        width: calc(30vw - 2*var(--border-size));
+        height: calc(0.5 * var(--height-of-logo) - 2*var(--border-size));
+        border-radius: var(--border-size);
+        line-height: calc(0.5 * var(--height-of-logo) - 2*var(--border-size));
+        border-radius: var(--border-size);
+        font-size: calc(0.5 * var(--height-of-logo) - 2*var(--border-size));
+    }
+}
+
+@media screen and (aspect-ratio > 1000/414) {
+    #amonguslogo {
+        position: absolute;
+        --height: calc(100vh / 1.6);
+        --width: calc(1000 * var(--height) / 259);
+        height: var(--height);
+        left: calc((100vw - var(--width))/2);
+    }
+
+    #start-button-border {
+        position:absolute;
+        --height-of-logo: calc(100vh / 1.6);
+        --width-of-logo: calc(1000 * var(--height-of-logo) / 259);
+        width: calc(var(--width-of-logo) * 0.3);
+        height: calc(0.5 * var(--height-of-logo));
+        border-radius: var(--border-size);
+        top: calc(1.1*var(--height-of-logo));
+        left: calc((100vw - var(--width-of-logo) * 0.3)/2);
+    }
+
+    #start-button-inside {
+        position: absolute;
+        --height-of-logo: calc(100vh / 1.6);
+        --width-of-logo: calc(1000 * var(--height-of-logo) / 259);
+        --height-of-inner: calc(0.5 * var(--height-of-logo) - 2 * var(--border-size));
+        --width-of-inner: calc(var(--width-of-logo) * 0.3 - 2 * var(--border-size));
+        height: var(--height-of-inner);
+        width: var(--width-of-inner);
+        top: var(--border-size);
+        left: var(--border-size);
+        border-radius: var(--border-size);
+        line-height: var(--height-of-inner);
+        font-size: var(--height-of-inner);
+    }
+}
+
+/* Among us Player Testimonials */
+
+#among-us-player-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition: 
+        visibility var(--transition-time),
+        opacity var(--transition-time);
+    transition-delay: var(--transition-time);
+
+    color: white;
+    font-size: 9vw;
+    text-align: center;
+}
+
+#among-us-player-flex {
+    /* flex box settings */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start-screen:checked ~ .hide-start {
+    visibility: visible;
+    opacity: 1;
+}
+
+#crewmate-div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ejectCrewmate {
+    display: none;
+}
+
+.ejectCrewmate:checked ~ #among-us-player-wrapper > #among-us-player-flex > #crewmate-div {
+    pointer-events: none;
+    cursor: default;
+}
+
+.ejectCrewmate:checked ~ #among-us-player-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.ejectText {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+    vertical-align: middle;
+    line-height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: 
+        visibility var(--transition-time),
+        opacity var(--transition-time);
+    transition-delay: var(--transition-time);
+
+}
+
+#ejectRed:checked ~ #red-eject {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ejectBlue:checked ~ #blue-eject {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ejectGreen:checked ~ #green-eject {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ejectYellow:checked ~ #yellow-eject {
+    opacity: 1;
+    visibility: visible;
+}
