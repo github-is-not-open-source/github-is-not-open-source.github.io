@@ -10,7 +10,7 @@ const nodeColor = [0,0,255]
 
 const startingAngle = 0;
 
-var minSecDegree = 360/60;//(180 - 2*startingAngle) / 60;
+var minSecDegree = 360/60;
 const radiusMinutes = 10;
 const radiusHours = 15;
 // distance between sibling nodes as a percentage of the radius of the node
