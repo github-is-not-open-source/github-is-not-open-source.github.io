@@ -1,0 +1,7 @@
+I really liked this reading because when I was just starting programming it was something I wondered about as well: did programmers in other countries use non english programming languages.  I think that the ideas that the author brought up are really interesting.  The author brings up the really interesting idea of a blend of languages as a language for coding languages.  Although one potential issue is that typing things in all characters needed for such a situation would require access to a huge number of characters which is hard to type with a single keyboard.
+
+ 
+
+Question:
+
+1. Do you think that the idea of a blend of all languages would work?

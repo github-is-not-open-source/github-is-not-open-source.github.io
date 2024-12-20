@@ -1,0 +1,7 @@
+I really liked this reading.  I strongly agreed with the authors' assertion that alt-text should be first and foremost about increasing accessibility.  The reading did leave me wanting more instruction on how to actually write expressive and poetic alt-text.  They gave some examples but no guidelines or suggestions.  They made a lot of statements about what general ideas help make good alt text but never dived into those ideas.
+
+ 
+
+Questions:
+
+1. How much of an alt text description should be a description of the image and how much should be trying to convey the tone and story

@@ -1,0 +1,9 @@
+/* dejavu-sans-mono-book */
+@font-face {
+	font-family: DejaVu Sans Mono;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("DejaVu Sans Mono"), local("DejaVuSansMono"), url(dejavu-sans-mono-book.woff2) format("woff2");
+}
+
